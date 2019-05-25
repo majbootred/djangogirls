@@ -73,13 +73,25 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'majbootred$djangogirls_test',
+        'USER': 'majbootred',
+        'PASSWORD': 'djangogirls_test_db',
+        'HOST': 'majbootred.mysql.pythonanywhere-services.com',
+    }
 }
+
+
 
 
 # Password validation
